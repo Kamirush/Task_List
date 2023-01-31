@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Список задач:</h1>
+            <ul class="tasksList">
+                Здесь будет ваш список задач в формате
+                <li  class = "taskItem">
+                    <div class="hideForAlting">
+                        Задача 1
+                        <button class="deleteTask">
+                            <ion-icon name="trash-outline" class="taskIcon"></ion-icon>
+                        </button>
+                        <button class="altTask">
+                            <ion-icon name="pencil-outline" class="taskIcon"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="showForAlting">
+                        <textarea class="altTaskObject" name="Text" cols="30" rows="1"></textarea>
+                        <button class="acceptTaskAlting">
+                            <ion-icon name="checkmark-outline" class="taskIcon"></ion-icon>
+                        </button>
+                        
+                    </div>
+                    
+                </li>
+                <li  class = "taskItem">
+                    <div class="hideForAlting">
+                        Задача 2
+                        <button class="deleteTask">
+                            <ion-icon name="trash-outline" class="taskIcon"></ion-icon>
+                        </button>
+                        <button class="altTask">
+                            <ion-icon name="pencil-outline" class="taskIcon"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="showForAlting">
+                        <textarea class="altTaskObject" name="Text" cols="30" rows="1"></textarea>
+                        <button class="acceptTaskAlting">
+                            <ion-icon name="checkmark-outline" class="taskIcon"></ion-icon>
+                        </button>
+                        
+                    </div>
+                    
+                </li>
+            </ul>
+        <div class="formForTasks">
+            <p class="taskP"><label for="Text">Опишите вашу новую задачу: </label></p>
+            <textarea class="taskObject" name="Text" cols="30" rows="2"></textarea>
+            <p class="taskP"><button  class = "taskButton" type="button">Добавить!</button></p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

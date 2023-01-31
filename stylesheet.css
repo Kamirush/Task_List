@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Roboto&display=swap');
+
+body {
+    background-color: rgb(255, 245, 158);
+    font-family: 'El Messiri', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    display: block;
+    max-width: 500px;
+    text-align: center;
+    border: 5px;
+    border-style:outset;
+    border-radius: 5%;
+    border-color: rgb(164, 247, 139);
+    font-family: inherit;
+    
+
+}
+
+.container {
+    margin: auto;
+    max-width: 750px;
+}
+
+.tasksList {
+    font-family: inherit;
+    font-size: 25px;
+    margin: 40px;
+    padding: 15px;
+    /* border: 2px;
+    border-color: rgb(164, 222, 255);
+    border-style: solid; */
+    /* box-sizing: border-box; */
+}
+
+.taskP {
+    margin: 3px;
+    font-size: 20px;
+}
+
+.formForTasks {
+    text-align: left;
+}
+
+.taskObject, .altTaskObject {
+    font-family: inherit;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.taskButton {
+    font-family: inherit;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(192, 230, 255);
+}
+
+.taskButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.taskItem {
+    margin-left: 20px;
+    background-image: initial;
+}
+
+.deleteTask, .altTask, .acceptTaskAlting {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: rgb(192, 230, 255);
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 25px;
+    width: 35px;
+    margin-left: 10px;
+}
+
+.deleteTask:hover, .altTask:hover, .acceptTaskAlting:hover {
+    opacity: 0.5;
+}
+.hideForAlting, .showForAlting {
+    display: flex;
+}
+
+.altTaskObject {
+    padding-top: 0;
+}
+
+.showForAlting {
+    display: none;
+}
