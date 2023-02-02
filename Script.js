@@ -66,8 +66,6 @@ let makeFirstTaskWithEnter = (event) => {
     if (event.code == "Enter") {
         event.preventDefault()
         makeFirstTask()
-        taskText.removeEventListener("keydown", makeFirstTaskWithEnter)
-        button.removeEventListener("click", makeFirstTask)
     }
 }
 
@@ -77,12 +75,14 @@ let deleteTask = (event) => {
 }
 
 let altTask = (event) => {
+    // Сделать поиск внутри элемента с помощью квери селектора
     let altElement = event.target.closest(".altTask").parentElement.parentElement;
     let hideForAlting = altElement.firstElementChild
     let showForAlting = altElement.lastElementChild
     let acceptButton = showForAlting.lastElementChild
     let altingArea = hideForAlting.nextElementSibling.firstElementChild
 
+    // Юзать спаны чтобы не сношаться с нодами 
     let oldTask = hideForAlting.childNodes[0].data.trim()
     let temp = altElement.innerHTML;
     // altElement.childNodes[0].data = "ssssssssss"
@@ -102,7 +102,6 @@ let altTask = (event) => {
     }
 
     let altTask = (event) => {
-
         hideForAlting.childNodes[0].data = altingArea.value
         hideForAlting.style.display = "flex"
         showForAlting.style.display = "none"
